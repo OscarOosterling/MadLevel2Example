@@ -10,12 +10,10 @@
         android:id="@+id/rvReminders"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/llAddReminderGroup"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
-
-    </androidx.recyclerview.widget.RecyclerView>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/llAddReminderGroup"
@@ -32,14 +30,15 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="@string/et_reminder"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:hint="@string/et_reminder" />
 
         <Button
-            android:id="@+id/btn_add_reminder"
+            android:id="@+id/btnAddReminder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/btn_add_reminder" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
